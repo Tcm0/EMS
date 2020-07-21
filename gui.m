@@ -292,8 +292,8 @@ function numberOfScans = numberofAScans(dataset)
 
     %Look how many triangles there are
     c = 1;
-    while c < values -3
-        if C(numberOfScansPosition, c+1) + C(numberOfScansPosition, c) + C(numberOfScansPosition, c+2) == 3
+    while c < values -5
+        if C(numberOfScansPosition, c+1) + C(numberOfScansPosition, c) + C(numberOfScansPosition, c+2) + C(numberOfScansPosition, c+3) + C(numberOfScansPosition, c+4) + C(numberOfScansPosition, c+5) == 6
             numberOfScans = numberOfScans + 1;
             c = c+7000;                         %Davon ausgehend, dass der nächste Spike min. 7000 Pixel entfernt ist
         end
